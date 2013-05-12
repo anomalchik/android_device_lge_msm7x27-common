@@ -74,7 +74,7 @@ case "$config" in
 esac
 
 
-PATCHRAM="/system/bin/brcm_patchram_plus -d --patchram /etc/firmware/BCM4325D1_004.002.004.0218.0248.hcd /dev/ttyHS0"
+PATCHRAM="/system/bin/brcm_patchram_plus -d --patchram /etc/firmware/BCM4330B1_002.001.003.0337.0338.hcd /dev/ttyHS0"
 eval $($PATCHRAM && echo "exit_code_brcm_patchram_plus_init=0" || echo "exit_code_brcm_patchram_plus_init=1")
 
 logi "Setting baudrate..."
