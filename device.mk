@@ -50,7 +50,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     com.qc.hdmi_out=false \
     debug.sf.hw=1 \
     debug.composition.type=mdp \
-    debug.gr.numframebuffers=3 \
+    debug.gr.numframebuffers=2 \
     persist.sys.purgeable_assets=1 \
     persist.service.adb.enable=1
 
@@ -67,8 +67,7 @@ PRODUCT_PACKAGES += \
 # Misc
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory \
-    lights.msm7x27 \
-    lgapversion
+    lights.msm7x27
     
 # GPS
 PRODUCT_PACKAGES += \
@@ -82,7 +81,7 @@ PRODUCT_PACKAGES += \
     
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm7x27 \
+    camera.msm7x27
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
@@ -118,11 +117,6 @@ PRODUCT_PACKAGES += \
     hciattach \
     brcm_patchram_plus \
     hwaddrs
-
-# Offmode charging
-PRODUCT_PACKAGES += \
-    charger \
-    charger_res_images
 
 # Inherit qcom/msm7x27
 $(call inherit-product, device/qcom/msm7x27/msm7x27.mk)
